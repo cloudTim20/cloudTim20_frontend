@@ -1,0 +1,63 @@
+<div id="bg">
+    <div id="container">
+        <div id="login_title">
+            <h1 id="header">LogIn</h1>
+            <p>Hello! Please fill out the form bellow to get started</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                id="email"
+                  type="text"
+                  class="form-control"
+                />
+                <!-- <div
+                  *ngIf="submitted && loginForm.controls.email.errors"
+                  class="text-danger"
+                >
+                  <div *ngIf="submitted && loginForm.controls.email.errors.required">
+                    Email is required
+                  </div>
+                </div> -->
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                id="password"
+                  type="password"
+                  class="form-control"
+                />
+                <!-- <div
+                  *ngIf="submitted && loginForm.controls.password.errors"
+                  class="text-danger"
+                >
+                  <div *ngIf="submitted && loginForm.controls.password.errors.required">
+                    Password is required
+                  </div>
+                </div> -->
+              </div>
+              <div class="form-group">
+                <button
+                  id="loginButton"
+                  class="btn btn-primary form-control loginButton"
+                  type="submit"
+                >
+                  LogIn</button
+                >
+              </div>
+              <div class="form-group" class="noAccount">
+                <label for="noaccount">No account?</label>
+              </div>
+              <div class="form-group">
+                <button
+                [routerLink]="['/registration']"
+                  id="signUpButton"
+                  class="btn btn-primary form-control signUpButton"
+                >
+                  SignUp
+                </button>
+              </div>
+        </form>
+    </div>
+</div>
