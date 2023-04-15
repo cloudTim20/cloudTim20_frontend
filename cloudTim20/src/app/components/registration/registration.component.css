@@ -1,0 +1,53 @@
+form {
+  margin: 30px;
+}
+
+#bg {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  margin-top: 50px;
+}
+
+#signUpButton {
+  color: #805d84;
+  background-color: white;
+  margin-top: 10px;
+  border: 0;
+  text-decoration: double;
+}
+
+#containter {
+  position: absolute;
+  float: left;
+  width: 50vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#registrationButton {
+  color: white;
+  background-color: #805d84;
+  margin-top: 30px;
+  border: 0;
+  text-decoration: double;
+}
+
+#registration_title {
+  text-align: center;
+  padding: 40px;
+}
+
+#registration_title h1 {
+  font-size: 40px;
+}
+
+#registration_title p {
+  padding: 10px;
+  font-size: 20px;
+}
