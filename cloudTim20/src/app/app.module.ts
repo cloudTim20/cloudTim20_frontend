@@ -14,6 +14,7 @@ import { CreateAlbumComponent } from './components/create-album/create-album.com
 import { DeleteAlbumComponent } from './components/delete-album/delete-album.component';
 import { ShareComponent } from './components/share/share.component';
 import { DownloadComponent } from './components/download/download.component';
+import { CreateContentComponent } from './components/create-content/create-content.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DownloadComponent } from './components/download/download.component';
     CreateAlbumComponent,
     DeleteAlbumComponent,
     ShareComponent,
-    DownloadComponent
+    DownloadComponent,
+    CreateContentComponent
   ],
   imports: [
     BrowserModule,

@@ -10,12 +10,14 @@ import { DownloadComponent } from './components/download/download.component';
 import { ShareComponent } from './components/share/share.component';
 import { UpdateContentComponent } from './components/update-content/update-content.component';
 import { ViewContentComponent } from './components/view-content/view-content.component';
+import { CreateContentComponent } from './components/create-content/create-content.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'main', component: MainComponent },
   { path: 'registration', component: RegistrationComponent },
+  { path: 'create', component: CreateContentComponent },
   { path: 'createalbum', component: CreateAlbumComponent },
   { path: 'deletealbum', component: DeleteAlbumComponent },
   { path: 'delete', component: DeleteContentComponent },
