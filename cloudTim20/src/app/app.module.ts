@@ -15,6 +15,8 @@ import { DeleteAlbumComponent } from './components/delete-album/delete-album.com
 import { ShareComponent } from './components/share/share.component';
 import { DownloadComponent } from './components/download/download.component';
 import { CreateContentComponent } from './components/create-content/create-content.component';
+import { HttpClientModule  } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CreateContentComponent } from './components/create-content/create-conte
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
