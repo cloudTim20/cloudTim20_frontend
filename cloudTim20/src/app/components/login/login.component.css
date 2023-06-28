@@ -3,19 +3,23 @@ form {
   }
   
   #bg {
-    height: 100vh;
-    
+    height: auto;
     background-size: cover;
-    position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   #containter {
-    position: absolute;
+    position: relative;
     float: left;
     width: 50vw;
     height: 80vh;
-    padding-top: 5%;
+    padding-top: 2%;
     background: rgba(255, 255, 255, 0.8);
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
@@ -57,4 +61,6 @@ form {
     padding: 10px;
     font-size: 20px;
   }
+  
+
   

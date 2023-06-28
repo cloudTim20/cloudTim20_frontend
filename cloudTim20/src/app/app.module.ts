@@ -17,6 +17,11 @@ import { DownloadComponent } from './components/download/download.component';
 import { CreateContentComponent } from './components/create-content/create-content.component';
 import { HttpClientModule  } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { AlbumViewComponent } from './components/album-view/album-view.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,13 +37,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     DeleteAlbumComponent,
     ShareComponent,
     DownloadComponent,
-    CreateContentComponent
+    CreateContentComponent,
+    AlbumViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

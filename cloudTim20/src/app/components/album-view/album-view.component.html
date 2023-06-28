@@ -1,0 +1,12 @@
+<div class="image-grid">
+  <div class="image-row" *ngFor="let image of images; let i = index;">
+    <div class="image-container" [ngClass]="{ 'highlighted': imageClicked === i }" (click)="onImageClick(i)">
+      <img class="image" [src]="image.src" [alt]="image.name">
+      <p class="image-name">{{ image.name }}</p>
+    </div>
+  </div>
+</div>
+
+
+
+  

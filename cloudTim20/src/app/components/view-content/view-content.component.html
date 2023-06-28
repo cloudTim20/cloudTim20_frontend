@@ -1,1 +1,13 @@
-<p>view-content works!</p>
+<div class="details-container">
+    <div class="image-container">
+      <img class="image" [src]="selectedImage.src" [alt]="selectedImage.name">
+    </div>
+    <div class="details">
+      <p>Name: {{ fileName }}</p>
+      <p>Size: {{ fileSize }}</p>
+      <p>File Type: {{ fileType }}</p>
+      <p>Creation Date: {{ creationTime}}</p>
+      <p>Last Modified: {{ lastChangeTime }}</p>
+    </div>
+  </div>
+  

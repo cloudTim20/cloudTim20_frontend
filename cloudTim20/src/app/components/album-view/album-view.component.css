@@ -1,0 +1,39 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+
+}
+
+.image-container {
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease; 
+  cursor: pointer;
+}
+
+.image-container:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container.highlighted {
+  box-shadow: 6px 6px 6px 6px hsla(261, 38%, 31%, 0.812);
+  border: 2px solid blue;
+}
+
+
+.image {
+  max-width: 250px;
+  max-height: 250px;
+  margin-bottom: 10px;
+}
+
+.image-name {
+  font-size: 14px;
+}

@@ -11,6 +11,7 @@ import { ShareComponent } from './components/share/share.component';
 import { UpdateContentComponent } from './components/update-content/update-content.component';
 import { ViewContentComponent } from './components/view-content/view-content.component';
 import { CreateContentComponent } from './components/create-content/create-content.component';
+import { AlbumViewComponent } from './components/album-view/album-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'download', component: DownloadComponent },
   { path: 'share', component: ShareComponent },
   { path: 'view', component: ViewContentComponent },
-  { path: 'update', component: UpdateContentComponent },];
+  { path: 'update', component: UpdateContentComponent },
+  { path: 'album/:name', component: AlbumViewComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

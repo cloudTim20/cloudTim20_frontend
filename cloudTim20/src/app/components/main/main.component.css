@@ -1,0 +1,17 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  mat-card {
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+  }
+
+  mat-card.highlighted {
+    box-shadow: 6px 6px 6px 6px hsla(261, 38%, 31%, 0.812);
+    border: 2px solid blue;
+  }

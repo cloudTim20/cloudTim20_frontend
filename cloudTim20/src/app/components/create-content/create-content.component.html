@@ -1,1 +1,15 @@
-<p>create-content works!</p>
+<div>
+  <form [formGroup]="fileForm" (ngSubmit)="uploadFile()">
+    <input class="picture-field" type="file" (change)="handleFileChange($event)" name="file" 
+    formControlName="file">
+    <button type="submit">Upload</button>
+  </form>
+</div>
+
+<div>
+  <p>Filename: {{ fileName }}</p>
+  <p>File type: {{ fileType }}</p>
+  <p>File size: {{ fileSize }}</p>
+  <p>Creation time: {{ creationTime }}</p>
+  <p>Last change time: {{ lastChangeTime }}</p>
+</div>
