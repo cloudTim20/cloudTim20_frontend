@@ -1,7 +1,22 @@
-<form (ngSubmit)="onSubmit()">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand title" [routerLink]="['/main']" style="font-size: x-large; font-weight: bold;">Main
+            folder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" [routerLink]="['/login']">LogOut</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<form (ngSubmit)="onSubmit()" style="margin-top: 5%;">
     <label for="albumName">Album Name</label>
     <input type="text" id="albumName" [(ngModel)]="albumName" name="albumName" required>
-  
-    <button type="submit">Submit</button>
+
+    <button class="btn btn-success"  type="submit">Submit</button>
+    <button style="margin-left: 10px;" onclick="window.history.back()" class="btn btn-light">Cancel</button>
 </form>
-  

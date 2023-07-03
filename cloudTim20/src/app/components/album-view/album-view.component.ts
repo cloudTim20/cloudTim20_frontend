@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Album } from '../models/album';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceService } from 'src/app/services/service.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-album-view',
@@ -44,7 +45,8 @@ export class AlbumViewComponent {
   imageClicked: number | null = null;
   selectedImage: any | null = null;
 
-  constructor(private route: ActivatedRoute, private service: ServiceService) { }
+  constructor(private route: ActivatedRoute, private imageService: ServiceService,private router: Router, private http: HttpClient) { }
+  
 
   ngOnInit(): void {
     this.name = this.route.snapshot.paramMap.get('name');
@@ -53,7 +55,26 @@ export class AlbumViewComponent {
   onImageClick(index: number) {
     this.imageClicked = index;
     this.selectedImage = this.images[index];
-    this.service.setSelectedImage(this.selectedImage);
+    this.imageService.setSelectedImage(this.selectedImage);
+    this.viewDetails();
+  }
+  deleteAlbum(){
+    const selectedAlbum = this.imageService.getSelectedAlbum();
+
+    if(selectedAlbum){
+      this.imageService.deleteAlbum(selectedAlbum.name);
+      this.router.navigate(['/main']);
+    }
+  }
+
+  viewDetails() {
+    const selectedImage = this.imageService.getSelectedImage();
+
+    if (selectedImage) {
+      this.router.navigate(['/view']);
+    } else {
+      this.router.navigate(['/main']);
+    }
   }
 }
 
